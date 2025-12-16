@@ -6,10 +6,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/xiaomi/surya
 
 PRODUCT_COPY_FILES += \
-    vendor/xiaomi/surya/proprietary/odm/etc/dolby/multimedia_dolby_dax_default.xml:$(TARGET_COPY_OUT_ODM)/etc/dolby/multimedia_dolby_dax_default.xml \
-    vendor/xiaomi/surya/proprietary/odm/etc/init/vendor.dolby.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby.media.c2@1.0-service.rc \
-    vendor/xiaomi/surya/proprietary/odm/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_sp.hardware.dmssp@2.0-service.rc \
-    vendor/xiaomi/surya/proprietary/odm/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc:$(TARGET_COPY_OUT_ODM)/etc/init/vendor.dolby_v3_6.hardware.dms360@2.0-service.rc \
     vendor/xiaomi/surya/proprietary/recovery/root/vendor/firmware/novatek_ts_huaxing_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_huaxing_fw.bin \
     vendor/xiaomi/surya/proprietary/recovery/root/vendor/firmware/novatek_ts_huaxing_mp.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_huaxing_mp.bin \
     vendor/xiaomi/surya/proprietary/recovery/root/vendor/firmware/novatek_ts_tianma_fw.bin:$(TARGET_COPY_OUT_RECOVERY)/root/vendor/firmware/novatek_ts_tianma_fw.bin \
@@ -371,60 +367,34 @@ PRODUCT_PACKAGES += \
     libxmi_high_dynamic_range \
     libxml2_vendor \
     sensors.ssc \
-    capi_v2_aptX_CLHDADV_Encoder \
-    capi_v2_aptX_CLHDAD_Speech_Decoder \
-    capi_v2_aptX_Classic \
-    capi_v2_aptX_HD \
-    libSuperSensor_skel \
-    libVC1Dec \
-    libVC1DecDsp_skel \
-    libVDHexagonSuperPhoto_skel \
-    libapps_mem_heap \
-    libarcsoft_dualcam_refocus_skel \
-    libcamera_nn_skel \
-    libcvpdsp_skel \
-    libdspCV_skel \
-    libdsp_streamer_add_constant \
-    libdsp_streamer_binning \
-    libdsp_streamer_skel \
-    libfastcvadsp \
-    libfastcvdsp_skel \
-    libhexagon_nn_skel \
-    libhexagon_nn_skel_secondary \
-    libscveObjectSegmentation_skel \
-    libscveT2T_skel \
-    libsnpe_dsp_v66_domains_v2_skel \
-    libsns_device_mode_skel \
-    libsns_low_lat_stream_skel \
-    misound_res \
-    tas25xx_TI_0 \
-    tas25xx_TI_1 \
-    libdapparamstorage_v3_6 \
-    libdeccfg_v3_6 \
-    libdlbdsservice_v3_6 \
-    vendor.dolby_v3_6.hardware.dms360@2.0 \
-    libstagefright_soft_ddpdec \
-    libhwdap_v3_6 \
-    libswdap_v3_6 \
-    libcodec2_hidl@1.0_sp \
-    libcodec2_hidl_plugin_sp \
-    libcodec2_soft_ac4dec_sp \
-    libcodec2_soft_common_sp \
-    libcodec2_soft_ddpdec_sp \
-    libcodec2_store_dolby_sp \
-    libcodec2_vndk_sp \
-    libdapparamstorage_sp \
-    libdeccfg_sp \
-    libdlbdsservice_sp \
-    libui_sp \
-    vendor.dolby_sp.hardware.dmssp@2.0-impl \
-    vendor.dolby_sp.hardware.dmssp@2.0 \
-    vendor.dolby_v3_6.hardware.dms360@2.0-impl \
-    manifest_dax_dolby_v3_6.xml \
-    vendor.dolby.hardware.dms.xml \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDADV_Encoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Speech_Decoder_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_Classic_so \
+    vendor_lib_rfsa_adsp_capi_v2_aptX_HD_so \
+    vendor_lib_rfsa_adsp_libSuperSensor_skel_so \
+    vendor_lib_rfsa_adsp_libVC1Dec_so \
+    vendor_lib_rfsa_adsp_libVC1DecDsp_skel_so \
+    vendor_lib_rfsa_adsp_libVDHexagonSuperPhoto_skel_so \
+    vendor_lib_rfsa_adsp_libapps_mem_heap_so \
+    vendor_lib_rfsa_adsp_libarcsoft_dualcam_refocus_skel_so \
+    vendor_lib_rfsa_adsp_libcamera_nn_skel_so \
+    vendor_lib_rfsa_adsp_libcvpdsp_skel_so \
+    vendor_lib_rfsa_adsp_libdspCV_skel_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_add_constant_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_binning_so \
+    vendor_lib_rfsa_adsp_libdsp_streamer_skel_so \
+    vendor_lib_rfsa_adsp_libfastcvadsp_so \
+    vendor_lib_rfsa_adsp_libfastcvdsp_skel_so \
+    vendor_lib_rfsa_adsp_libhexagon_nn_skel_so \
+    vendor_lib_rfsa_adsp_libhexagon_nn_skel_secondary_so \
+    vendor_lib_rfsa_adsp_libscveObjectSegmentation_skel_so \
+    vendor_lib_rfsa_adsp_libscveT2T_skel_so \
+    vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
+    vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
+    vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    vendor_lib_rfsa_adsp_misound_res_bin \
+    vendor_lib_rfsa_adsp_tas25xx_TI_0_bin \
+    vendor_lib_rfsa_adsp_tas25xx_TI_1_bin \
     batterysecret \
     mi_thermald \
-    sensors.qti \
-    vendor.dolby_sp.hardware.dmssp@2.0-service \
-    vendor.dolby_sp.media.c2@1.0-service \
-    vendor.dolby_v3_6.hardware.dms360@2.0-service
+    sensors.qti
